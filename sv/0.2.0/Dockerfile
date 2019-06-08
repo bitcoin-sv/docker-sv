@@ -7,9 +7,9 @@ RUN set -ex \
 	&& apt-get install -qq --no-install-recommends ca-certificates dirmngr gosu gpg wget \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV BITCOIN_VERSION 0.17.2
-ENV BITCOIN_URL https://download.bitcoinabc.org/0.17.2/linux/bitcoin-abc-0.17.2-x86_64-linux-gnu.tar.gz
-ENV BITCOIN_SHA256 aa8961e11139ea071e1884e9604e67611b48ee76cdf55d05f9a8dfe25d8feeae
+ENV BITCOIN_VERSION 0.2.0
+ENV BITCOIN_URL http://download.bitcoinsv.io/bitcoinsv/0.2.0/bitcoin-sv-0.2.0-x86_64-linux-gnu.tar.gz
+ENV BITCOIN_SHA256 e880d414b3dc355128788e9d70e0b16f9aace7cfb2a5766217969c79d4fad565
 
 # install bitcoin binaries
 RUN set -ex \
@@ -30,5 +30,5 @@ VOLUME /data
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
-EXPOSE 8332 8333 18332 18333
+EXPOSE 8332 8333 9332 9333 18332 18333
 CMD ["bitcoind"]
