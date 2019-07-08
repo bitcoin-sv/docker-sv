@@ -9,20 +9,20 @@ Included in this repo are docker images for the Bitcoin SV Node implementation. 
 
 This Docker image provides `bitcoind`, `bitcoin-cli` and `bitcoin-tx` which can be used to run and interact with a Bitcoin server.
 
-To see the available versions/tags, please visit the [Docker Hub page](https://hub.docker.com/r/bitcoin-sv/bitcoin-sv/).
+To see the available versions/tags, please visit the [Docker Hub page](https://hub.docker.com/r/bitcoinsv/bitcoin-sv/).
 
 ### Usage
 
 To run the latest version of Bitcoin SV:
 
 ```
-$ docker run bitcoin-sv/bitcoin-sv
+$ docker run bitcoinsv/bitcoin-sv
 ```
 
 To run a container in the background, pass the `-d` option to `docker run`, and give your container a name for easy reference later:
 
 ```
-$ docker run -d --rm --name bitcoind bitcoin-sv/bitcoin-sv
+$ docker run -d --rm --name bitcoind bitcoinsv/bitcoin-sv
 ```
 
 Once you have the bitcoind service running in the background, you can show running containers:
@@ -50,7 +50,7 @@ The best method to configure the server is to pass arguments to the `bitcoind` c
 on the testnet:
 
 ```
-$ docker run --name bitcoind-testnet bitcoin-sv/bitcoin-sv bitcoind -testnet
+$ docker run --name bitcoind-testnet bitcoinsv/bitcoin-sv bitcoind -testnet
 ```
 
 Alternatively, you can edit the `bitcoin.conf` file which is generated in your data directory (see below).
@@ -64,7 +64,7 @@ To keep your blockchain data between container restarts or upgrades, simply add 
 [data volume](https://docs.docker.com/engine/tutorials/dockervolumes/):
 
 ```
-$ docker run -d --rm --name bitcoind -v bitcoin-data:/data bitcoin-sv/bitcoin-sv
+$ docker run -d --rm --name bitcoind -v bitcoin-data:/data bitcoinsv/bitcoin-sv
 $ docker ps
 $ docker inspect bitcoin-data
 ```
@@ -72,7 +72,7 @@ $ docker inspect bitcoin-data
 Alternatively, you can map the data volume to a location on your host:
 
 ```
-$ docker run -d --rm --name bitcoind -v "$PWD/data:/data" bitcoin-sv/bitcoin-sv
+$ docker run -d --rm --name bitcoind -v "$PWD/data:/data" bitcoinsv/bitcoin-sv
 $ ls -alh ./data
 ```
 
@@ -85,8 +85,8 @@ There are several methods to run `bitclin-cli` against a running `bitcoind` cont
 `bitcoin-cli` container share networking with your `bitcoind` container:
 
 ```
-$ docker run -d --rm --name bitcoind -v bitcoin-data:/data bitcoin-sv/bitcoin-sv
-$ docker run --rm --network container:bitcoind bitcoin-sv/bitcoin-sv bitcoin-cli getinfo
+$ docker run -d --rm --name bitcoind -v bitcoin-data:/data bitcoinsv/bitcoin-sv
+$ docker run --rm --network container:bitcoind bitcoinsv/bitcoin-sv bitcoin-cli getinfo
 ```
 
 If you plan on exposing the RPC port to multiple containers (for example, if you are developing an application which 
@@ -97,8 +97,8 @@ container:
 
 ```
 $ docker network create bitcoin
-$ docker run -d --rm --name bitcoind -v bitcoin-data:/data --network bitcoin bitcoin-sv/bitcoin-sv
-$ docker run --rm --network bitcoin bitcoin-sv/bitcoin-sv bitcoin-cli -rpcconnect=bitcoind getinfo
+$ docker run -d --rm --name bitcoind -v bitcoin-data:/data --network bitcoin bitcoinsv/bitcoin-sv
+$ docker run --rm --network bitcoin bitcoinsv/bitcoin-sv bitcoin-cli -rpcconnect=bitcoind getinfo
 ```
 
 ### Kubernetes Configs
@@ -145,7 +145,7 @@ spec:
             secretKeyRef:
               name: bitcoin
               key: rpcpass
-        image: bitcoin-sv/bitcoin-sv
+        image: bitcoinsv/bitcoin-sv
         name: bitcoin
         volumeMounts:
           - mountPath: /data
