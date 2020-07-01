@@ -26,4 +26,6 @@ sv:
   1.0.3:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.3/bitcoin-sv-1.0.3-x86_64-linux-gnu.tar.gz
     sha256: e3145eb6b1aae551fa0dd442f568ba1fa9ae27b989341f85a1ec2a7084859131
-
+  1.0.4:
+    url: http://download.bitcoinsv.io/bitcoinsv/1.0.4/bitcoin-sv-1.0.4-x86_64-linux-gnu.tar.gz
+    sha256: 6dbff7bc2423fc7efc6efb2562264e9c86cd3e7c8000b893d0b087545123c159
