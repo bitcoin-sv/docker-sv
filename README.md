@@ -195,6 +195,30 @@ spec:
 
 For a complete example of running a bitcoin node using Docker Compose, see the [Docker Compose example](/example#readme).
 
+### Core dumps
+
+Whether core dump is generated when running BitcoinSV Node in Docker container it depends on settings on the host machine.
+
+`/proc/sys/kernel/core_pattern` is a global setting and does not support setting it separately per container.
+
+If `core_pattern` is an absolute path core file is generate __inside__ container's file system.
+
+You can copy it from the container with the following command:
+
+```docker
+docker cp <container_name>:<path_to_core_dump> <location_on_host_machine>
+```
+
+> Note: the path to core dump is defined by `/proc/sys/kernel/core_pattern` on the host machine. \
+To change it permanently: \
+1.)  Add `kernel.core_pattern = <core_dump_location>` to `/etc/sysctl.conf`. \
+(Recommended setting for `<core_dump_location>` is `/tmp/core.%e.%p.%t`.)
+\
+2.) Run `sudo sysctl --system` for new setting to become active without restarting the machine.
+\
+Ubuntu users have to also change `enabled` from `1` to `0` in `/etc/default/apport`.
+> Note: The container should not be started with --rm flag (--rm flag causes deleting container's filesystem after container exits and this prevents us from copying core dump file).
+
 ### License
 
 Configuration files and code in this repository are distributed under the [MIT license](/LICENSE).
