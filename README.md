@@ -18,6 +18,7 @@ To run the latest version of Bitcoin SV:
 ```
 $ docker run bitcoinsv/bitcoin-sv
 ```
+> BitcoinSV Node versions >= 1.0.0 have two mandatory parameters (excessiveblocksize, maxstackmemoryusageconsensus). If you are not providing them after docker run command following settings are used: -excessiveblocksize=1000000000, maxstackmemoryusageconsensus=100000000
 
 To run a container in the background, pass the `-d` option to `docker run`, and give your container a name for easy reference later:
 
@@ -47,10 +48,10 @@ $ docker start bitcoind
 ### Configuring Bitcoin
 
 The best method to configure the server is to pass arguments to the `bitcoind` command. For example, to run Bitcoin SV 
-on the testnet:
-
+on the testnet. \
+(When providing additional arguments to `bitcoind` you have to also set mandatory arguments excessiveblocksize and maxstackmemoryusageconsensus):
 ```
-$ docker run --name bitcoind-testnet bitcoinsv/bitcoin-sv bitcoind -testnet
+$ docker run --name bitcoind-testnet bitcoinsv/bitcoin-sv bitcoind -excessiveblocksize=1000000000 maxstackmemoryusageconsensus=100000000 -testnet
 ```
 
 Alternatively, you can edit the `bitcoin.conf` file which is generated in your data directory (see below).

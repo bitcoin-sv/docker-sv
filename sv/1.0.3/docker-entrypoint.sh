@@ -11,6 +11,8 @@ if [[ "$1" == "bitcoin-cli" || "$1" == "bitcoin-tx" || "$1" == "bitcoind" || "$1
 		rpcallowip=::/0
 		rpcpassword=${BITCOIN_RPC_PASSWORD:-password}
 		rpcuser=${BITCOIN_RPC_USER:-bitcoin}
+		excessiveblocksize=1000000000
+		maxstackmemoryusageconsensus=100000000
 		EOF
 		chown bitcoin:bitcoin "$BITCOIN_DATA/bitcoin.conf"
 	fi
