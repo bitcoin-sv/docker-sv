@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian:<%= debian %>-slim
 
 RUN groupadd -r bitcoin && useradd -r -m -g bitcoin bitcoin
 

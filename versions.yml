@@ -2,71 +2,94 @@ sv:
   0.2.0:
     url: http://download.bitcoinsv.io/bitcoinsv/0.2.0/bitcoin-sv-0.2.0-x86_64-linux-gnu.tar.gz
     sha256: e880d414b3dc355128788e9d70e0b16f9aace7cfb2a5766217969c79d4fad565
+    debian: buster
   0.2.1:
     url: https://download.bitcoinsv.io/bitcoinsv/0.2.1/bitcoin-sv-0.2.1-x86_64-linux-gnu.tar.gz
     sha256: ead4e26a516ff79be3615b165ceba41dc08c6c7656a0054b591d0c8085c6208c
+    debian: buster
   0.2.2.beta:
     url: https://download.bitcoinsv.io/bitcoinsv/0.2.2.beta/bitcoin-sv-0.2.2.beta-x86_64-linux-gnu.tar.gz
     sha256: 8cdbbd48fddf4cba83f7405913ca3bcc912e370dcf8f79da1e8e5fb567c9827a
+    debian: buster
   1.0.0.beta1:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.0.beta/bitcoin-sv-1.0.0.beta-x86_64-linux-gnu.tar.gz
     sha256: b7e3c4b6597e6ff1d6d594e25ebd81c72b445f7b91493c1d7c76e297ed988048
+    debian: buster
   1.0.0.beta2:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.0.beta2/bitcoin-sv-1.0.0.beta2-x86_64-linux-gnu.tar.gz
     sha256: 886767d4132fe886a2d2dcafb6b0348eb02f8c0f9dddae0c0968c5b6ac9197d6
+    debian: buster
   1.0.0:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.0/bitcoin-sv-1.0.0-x86_64-linux-gnu.tar.gz
     sha256: af39db1c484a7eaa0f7a7515f08e124104d12935cefbf12b5c15193d2f3c7dbb
+    debian: buster
   1.0.1:
     url: https://download.bitcoinsv.io/bitcoinsv/1.0.1/bitcoin-sv-1.0.1-x86_64-linux-gnu.tar.gz
     sha256: 8392c340b1fcc74ada9de72b16b5e026443c4b08757664b8133f447157b25a56
+    debian: buster
   1.0.2:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.2/bitcoin-sv-1.0.2-x86_64-linux-gnu.tar.gz
     sha256: 4f777d47c136194f0076a54b2241d41fc719d2e8739de559c7bf568e22a0b254   
+    debian: buster
   1.0.3:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.3/bitcoin-sv-1.0.3-x86_64-linux-gnu.tar.gz
     sha256: e3145eb6b1aae551fa0dd442f568ba1fa9ae27b989341f85a1ec2a7084859131
+    debian: buster
   1.0.4:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.4/bitcoin-sv-1.0.4-x86_64-linux-gnu.tar.gz
     sha256: 6dbff7bc2423fc7efc6efb2562264e9c86cd3e7c8000b893d0b087545123c159
+    debian: buster
   1.0.5:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.5/bitcoin-sv-1.0.5-x86_64-linux-gnu.tar.gz
     sha256: 96f7c56c7ebd4ecb2dcd664297fcf0511169ac33eaf216407ebc49dae2535578
+    debian: buster
   1.0.6.beta:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.6.beta/bitcoin-sv-1.0.6.beta-x86_64-linux-gnu.tar.gz
     sha256: 405b60ac602402ffff7e9d711bf9c35771b5326923cca4a2dacc2d469f8967b4
+    debian: buster
   1.0.6:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.6/bitcoin-sv-1.0.6-x86_64-linux-gnu.tar.gz
     sha256: 4dd979080c446c79bb577fc8e3a3babf83b76641a3e3c4268e8abcefdcb767d4
+    debian: buster
   1.0.7.beta:
     client_version: v1.0.7
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.7.beta/bitcoin-sv-1.0.7.beta-x86_64-linux-gnu.tar.gz
     sha256: cdec1b2592f3216932c318512392d33f8968e34cdfc55d2eb576d19f10cfd240
+    debian: buster
   1.0.7:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.7/bitcoin-sv-1.0.7-x86_64-linux-gnu.tar.gz
     sha256: 6785f117b282aee4f81fb06d1fb5fb900306ca5c5a91ad85619f68da20f68445
+    debian: buster
   1.0.7.1:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.7.1/bitcoin-sv-1.0.7.1-x86_64-linux-gnu.tar.gz
     sha256: a0ea0d337577061e3137ca3976b0948195e7defa21e0fae536fb84817dd686a0
+    debian: buster
   1.0.8.beta:
     client_version: v1.0.8
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.8.beta/bitcoin-sv-1.0.8.beta-x86_64-linux-gnu.tar.gz
     sha256: 20da7b5426255c69db22d5c35dd094d1fcbb92f15415ca6e87527e2efb8bf5cb
+    debian: buster
   1.0.8:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.8/bitcoin-sv-1.0.8-x86_64-linux-gnu.tar.gz
     sha256: 72f924c02fb05a327a250b04494813dd5b9958573303bfbd74f2ea57fa02f615
+    debian: buster
   1.0.9:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.9/bitcoin-sv-1.0.9-x86_64-linux-gnu.tar.gz
     sha256: 4b94f6297930932ee917ebc945818850015a932a1bc0e57b82dcba2654e2f38b
+    debian: buster
   1.0.10:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.10/bitcoin-sv-1.0.10-x86_64-linux-gnu.tar.gz
     sha256: bfe12a7aba566ca1ead8b76237a3d911ce83a816ead5de07d9df025e9af94c6e
+    debian: buster
   1.0.11:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.11/bitcoin-sv-1.0.11-x86_64-linux-gnu.tar.gz
     sha256: 651b3b627d51892799ed4e5ac17656cccdcc7c64b8542f1889a4a575a661f162  
+    debian: buster
   1.0.13:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.13/bitcoin-sv-1.0.13-x86_64-linux-gnu.tar.gz
     sha256: aef8ab4cb37e5318319ab2c9daad724552398d3246507f5a3324aef955db03cd  
+    debian: buster
   1.0.14:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.14/bitcoin-sv-1.0.14-x86_64-linux-gnu.tar.gz
     sha256: b87a3772d4f2a4502e5a27b3bb7c98cb5f00e0d25d1f6cc31b1874962f9933e8  
+    debian: buster
