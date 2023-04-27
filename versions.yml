@@ -93,3 +93,7 @@ sv:
     url: http://download.bitcoinsv.io/bitcoinsv/1.0.14/bitcoin-sv-1.0.14-x86_64-linux-gnu.tar.gz
     sha256: b87a3772d4f2a4502e5a27b3bb7c98cb5f00e0d25d1f6cc31b1874962f9933e8  
     debian: buster
+  1.0.15:
+    url: http://download.bitcoinsv.io/bitcoinsv/1.0.15/bitcoin-sv-1.0.15-x86_64-linux-gnu.tar.gz
+    sha256: ca07dc10959e0da8db35d369485e39cc85e90b1164c32630b954d0bdb93f5ed4  
+    debian: bullseye
