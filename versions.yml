@@ -113,3 +113,7 @@ sv:
     url: http://download.bitcoinsv.io/bitcoinsv/1.1.1/bitcoin-sv-1.1.1-x86_64-linux-gnu.tar.gz
     sha256: da336914e512ed568b94496cd83c89a53e281b944cf08c5c01ddf06beb836705
     debian: bookworm
+  1.2.0:
+    url: http://download.bitcoinsv.io/bitcoinsv/1.2.0/bitcoin-sv-1.2.0-x86_64-linux-gnu.tar.gz
+    sha256: 994635b654bc7878895c672b17bea078ee013804580c56bdcf9fe9d109218716
+    debian: trixie
