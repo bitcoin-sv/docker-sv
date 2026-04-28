@@ -121,3 +121,7 @@ sv:
     url: http://download.bitcoinsv.io/bitcoinsv/1.2.1/bitcoin-sv-1.2.1-x86_64-linux-gnu.tar.gz
     sha256: 62746974e2588bd1f6872913158f124311406efaca4d1e1da9bda609e83cc943
     debian: trixie
+  1.2.2:
+    url: http://download.bitcoinsv.io/bitcoinsv/1.2.2/bitcoin-sv-1.2.2-x86_64-linux-gnu.tar.gz
+    sha256: d8b181c89fb6b76ff74487472d29d9d4ada6d2f186d89d84d33d9861d681e073
+    debian: trixie
